@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Z3A Consulting Group: strategic advice and consultancy, training and coaching, content development and design, and analytics and advanced solutions. Sydney, Australia.">
+<meta property="og:title" content="Z3A Consulting Group">
+<meta property="og:description" content="More than 25 years of academic rigour and 20 years of impactful professional practice, fused to drive excellence.">
+<meta property="og:url" content="https://z3a.com.au/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2310292A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23D4A651'%3EZ3A%3C/text%3E%3C/svg%3E">
+<title>Z3A Consulting Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: an academic folio — a wide left margin column carries labels and section marks, content runs in the right column; one oversized Z3A monogram anchors the hero. */
+:root{
+  --paper:#ECEFED;      /* cool mineral paper */
+  --paper-2:#E1E6E3;
+  --ink:#10292A;        /* deep spruce */
+  --ink-soft:#4A5E5D;
+  --rule:#C3CCC8;
+  --brass:#9C6F1E;      /* brass accent */
+  --brass-tint:#E8DCC2;
+  --on-ink:#ECEFED;
+  --display:"Gloock", "Bodoni 72", Didot, Georgia, serif;
+  --body:"Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --s1:clamp(2.9rem, 9vw, 6.4rem);
+  --s2:clamp(1.9rem, 4.2vw, 2.9rem);
+  --s3:1.35rem;
+  --s4:1.05rem;
+  --s5:.78rem;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E1C1D; --paper-2:#132527; --ink:#E4E9E6; --ink-soft:#9DB0AD; --rule:#284041;
+  --brass:#D4A651; --brass-tint:#2E2A1C; --on-ink:#0E1C1D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1C1D; --paper-2:#132527; --ink:#E4E9E6; --ink-soft:#9DB0AD; --rule:#284041;
+  --brass:#D4A651; --brass-tint:#2E2A1C; --on-ink:#0E1C1D; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:var(--s4);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(24px, env(safe-area-inset-left,0px));padding-right:max(24px, env(safe-area-inset-right,0px))}
+@media (max-width:480px){.wrap{padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;letter-spacing:-.01em}
+p{margin:0}
+.label{font-family:var(--mono);font-size:var(--s5);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand b{font-family:var(--display);font-weight:400;font-size:1.55rem;letter-spacing:.02em}
+.brand span{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.92rem}
+.nav ul a{text-decoration:none;color:var(--ink-soft)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border:1px solid var(--ink);background:var(--ink);color:var(--on-ink);text-decoration:none;font-weight:500;font-size:.92rem;border-radius:2px;cursor:pointer;font-family:var(--body);transition:background .2s,color .2s}
+.btn:hover{background:var(--brass);border-color:var(--brass);color:var(--on-ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--on-ink);border-color:var(--ink)}
+@media (max-width:860px){.nav ul{display:none}}
+
+/* folio grid */
+.folio{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;padding-block:96px;border-bottom:1px solid var(--rule)}
+.folio > aside{display:flex;flex-direction:column;gap:6px}
+.folio > aside .mark{font-family:var(--display);font-size:2.4rem;line-height:1;color:var(--brass)}
+@media (max-width:860px){.folio{grid-template-columns:minmax(0,1fr);gap:24px;padding-block:64px}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:end;padding-block:72px 80px;border-bottom:1px solid var(--rule)}
+.hero h1{font-size:clamp(2.2rem,5.2vw,4.1rem);line-height:1.06}
+.hero h1 em{font-style:normal;color:var(--brass)}
+.hero .lede{margin-top:28px;max-width:56ch;font-size:1.15rem;color:var(--ink-soft)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.mono-block{position:relative;border:1px solid var(--rule);background:var(--paper-2);padding:28px;display:flex;flex-direction:column;gap:22px}
+.mono-block .z{font-family:var(--display);font-size:clamp(6rem,17vw,11rem);line-height:.82;letter-spacing:-.04em}
+.mono-block .z sup{font-size:.4em;color:var(--brass);vertical-align:.95em;margin-left:.02em}
+.mono-block dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0;font-size:.9rem;border-top:1px solid var(--rule);padding-top:18px}
+.mono-block dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);padding-top:3px}
+.mono-block dd{margin:0}
+.mono-block dd a{text-decoration:none;border-bottom:1px solid var(--rule);line-height:1.9}
+.mono-block dd a:hover{color:var(--brass);border-color:var(--brass)}
+@media (max-width:860px){.hero{grid-template-columns:minmax(0,1fr);padding-block:48px 56px}}
+
+/* intro statement */
+.statement{font-family:var(--display);font-size:var(--s2);line-height:1.18;max-width:24ch}
+.statement span{color:var(--brass)}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px;max-width:820px;color:var(--ink-soft)}
+@media (max-width:640px){.cols2{grid-template-columns:1fr}}
+
+/* four domains */
+.domains{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--ink);border-left:1px solid var(--rule)}
+.dom{padding:30px 30px 28px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:14px;position:relative;transition:background .25s;scroll-margin-top:90px}
+.dom::before{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:3px;background:var(--brass);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.dom:hover{background:var(--paper-2)}
+.dom:hover::before{transform:scaleX(1)}
+.dom-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dom-head .code{font-family:var(--mono);font-size:var(--s5);color:var(--brass);letter-spacing:.14em}
+.dom h3{font-size:1.75rem;line-height:1.15}
+.dom > p{color:var(--ink-soft)}
+.dom ul{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column}
+.dom li{padding:9px 0 9px 22px;border-top:1px solid var(--rule);position:relative;font-size:.95rem}
+.dom li::before{content:"";position:absolute;left:0;top:1.15em;width:12px;height:1px;background:var(--brass)}
+.dom .for{margin-top:auto;padding-top:10px;font-size:.85rem;color:var(--ink-soft)}
+.dom .for b{font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-right:8px}
+@media (max-width:760px){.domains{grid-template-columns:minmax(0,1fr)}.dom{padding:24px 20px}}
+
+/* services (legacy) */
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto;gap:32px;padding-block:30px;border-bottom:1px solid var(--rule);align-items:start;transition:background .25s}
+.svc li:hover{background:var(--paper-2)}
+.svc h3{font-size:var(--s3);line-height:1.25}
+.svc p{color:var(--ink-soft);max-width:60ch}
+.svc .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.svc .tags span{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;padding:3px 8px;border:1px solid var(--rule);color:var(--ink-soft);border-radius:2px}
+.svc .code{font-family:var(--mono);font-size:var(--s5);color:var(--brass);letter-spacing:.1em;white-space:nowrap}
+@media (max-width:760px){.svc li{grid-template-columns:minmax(0,1fr);gap:10px}.svc .code{order:-1}}
+
+/* audiences */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule)}
+.aud > div{padding:36px;display:flex;flex-direction:column;gap:16px}
+.aud > div + div{border-left:1px solid var(--rule)}
+.aud h3{font-size:1.6rem}
+.aud ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.aud li{padding-left:22px;position:relative;color:var(--ink-soft)}
+.aud li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1px;background:var(--brass)}
+.aud .dark{background:var(--ink);color:var(--on-ink)}
+.aud .dark li{color:color-mix(in srgb, var(--on-ink) 78%, transparent)}
+.aud .dark .label{color:color-mix(in srgb, var(--on-ink) 65%, transparent)}
+@media (max-width:760px){.aud{grid-template-columns:1fr}.aud > div + div{border-left:0;border-top:1px solid var(--rule)}.aud > div{padding:28px 22px}}
+
+/* method */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s}
+.steps > div{padding:0 24px 0 0;display:flex;flex-direction:column;gap:12px;position:relative}
+.steps > div::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--mono);font-size:var(--s5);color:var(--brass);letter-spacing:.1em;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.steps h3{font-size:1.45rem}
+.steps p{color:var(--ink-soft);font-size:.95rem}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr;row-gap:36px}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* deliverable spec */
+.spec{border:1px solid var(--rule);background:var(--paper-2);overflow-x:auto}
+.spec table{width:100%;border-collapse:collapse;min-width:560px;font-size:.93rem}
+.spec th,.spec td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--rule);vertical-align:top}
+.spec th{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.spec tr:last-child td{border-bottom:0}
+.spec td:first-child{font-weight:600;white-space:nowrap}
+.spec td.n{font-family:var(--mono);color:var(--brass);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* founders */
+.people{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.person{border-top:1px solid var(--ink);padding-top:22px;display:flex;flex-direction:column;gap:14px}
+.person .init{width:64px;height:64px;border:1px solid var(--brass);display:grid;place-items:center;font-family:var(--display);font-size:1.6rem;color:var(--brass)}
+.person h3{font-size:1.75rem}
+.portrait{margin:0 0 6px;width:100%;max-width:300px;aspect-ratio:1/1;position:relative;background:var(--paper-2);border:1px solid var(--rule)}
+.portrait::after{content:"";position:absolute;inset:10px -10px -10px 10px;border:1px solid var(--brass);z-index:-1}
+.portrait img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.02)}
+.portrait.empty{display:grid;place-items:center}
+.portrait.empty span{font-family:var(--display);font-size:4.5rem;color:var(--brass);letter-spacing:.02em}
+.practice-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:56px;align-items:start}
+.portrait-fig{margin:0;display:flex;flex-direction:column;gap:22px;isolation:isolate}
+.portrait-fig .portrait{max-width:none}
+.portrait-fig figcaption{display:flex;flex-direction:column;gap:2px;padding-top:6px}
+.portrait-fig figcaption b{font-family:var(--display);font-weight:400;font-size:1.3rem}
+.portrait-fig figcaption span{font-family:var(--mono);font-size:var(--s5);letter-spacing:.12em;text-transform:uppercase;color:var(--brass)}
+@media (max-width:960px){.practice-grid{grid-template-columns:minmax(0,1fr);gap:40px}.portrait-fig{max-width:240px}}
+.person .role{font-family:var(--mono);font-size:var(--s5);letter-spacing:.1em;text-transform:uppercase;color:var(--brass)}
+.person p{color:var(--ink-soft);max-width:52ch}
+.person .areas{display:flex;flex-wrap:wrap;gap:6px}
+.person .areas span{font-size:.8rem;padding:3px 10px;background:var(--brass-tint);color:var(--ink);border-radius:2px}
+@media (max-width:760px){.people{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--ink);color:var(--on-ink)}
+.contact .folio{border-bottom:0}
+.contact .label{color:color-mix(in srgb, var(--on-ink) 62%, transparent)}
+.contact h2{font-size:var(--s2);line-height:1.15;max-width:20ch}
+.contact .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px;margin-top:36px}
+.contact .info{display:flex;flex-direction:column;gap:18px;font-size:.98rem}
+.contact .info .v{user-select:all;font-family:var(--mono);font-size:.92rem}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .full{grid-column:1/-1}
+form label{display:flex;flex-direction:column;gap:6px;font-size:.8rem;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb, var(--on-ink) 70%, transparent)}
+input,select,textarea{font:inherit;font-family:var(--body);font-size:.98rem;letter-spacing:0;text-transform:none;color:var(--on-ink);background:transparent;border:0;border-bottom:1px solid color-mix(in srgb, var(--on-ink) 35%, transparent);padding:8px 0;border-radius:0;width:100%}
+select option{color:#10292A;background:#ECEFED}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:0;border-bottom-color:var(--brass)}
+.contact .btn{background:var(--brass);border-color:var(--brass);color:var(--on-ink)}
+.contact .btn:hover{background:var(--on-ink);border-color:var(--on-ink);color:var(--ink)}
+.out{grid-column:1/-1;border:1px solid color-mix(in srgb, var(--on-ink) 30%, transparent);padding:18px;font-size:.92rem;display:flex;flex-direction:column;gap:12px}
+.out pre{white-space:pre-wrap;margin:0;font-family:var(--mono);font-size:.82rem;line-height:1.55}
+@media (max-width:760px){.contact .grid{grid-template-columns:1fr}form{grid-template-columns:1fr}}
+
+footer{border-top:1px solid color-mix(in srgb, var(--on-ink) 18%, transparent);background:var(--ink);color:color-mix(in srgb, var(--on-ink) 65%, transparent);font-size:.82rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:24px}
+
+@keyframes rise{from{transform:translateY(14px);opacity:.001}to{transform:none;opacity:1}}
+.hero h1,.hero .lede,.hero .actions,.mono-block{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .lede{animation-delay:.12s}.hero .actions{animation-delay:.22s}.mono-block{animation-delay:.3s}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>Z3A</b><span>Consulting Group</span></a>
+    <ul>
+      <li><a href="#practice">Practice</a></li>
+      <li><a href="#services">Domains</a></li>
+      <li><a href="#method">Method</a></li>
+    </ul>
+    <a class="btn" href="#contact">Start a conversation</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div>
+      <p class="label">Advisory · Education · Analytics — Sydney</p>
+      <h1 style="margin-top:22px">More than 25 years of academic rigour and 20 years of impactful professional practice, <em>fused</em> to drive excellence.</h1>
+      <p class="lede">Z3A Consulting Group is a trusted partner to higher education institutions, professional educators and executives who value scientifically and practically rigorous solutions to their complex problems.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Discuss an engagement</a>
+        <a class="btn ghost" href="#services">Explore our domains</a>
+      </div>
+    </div>
+    <div class="mono-block" aria-hidden="false">
+      <div class="z" aria-label="Z3A">Z<sup>3</sup>A</div>
+      <dl>
+        <dt>Entity</dt><dd>Z3A Consulting Group Pty Ltd</dd>
+        <dt>ABN</dt><dd style="font-family:var(--mono);font-size:.85rem;font-variant-numeric:tabular-nums">32 703 232 562</dd>
+        <dt>Domains</dt><dd><a href="#d-strategy">Strategic Advice &amp; Consultancy</a><br><a href="#d-training">Training &amp; Coaching</a><br><a href="#d-content">Content Development &amp; Design</a><br><a href="#d-analytics">Analytics &amp; Advanced Solutions</a></dd>
+        <dt>Based</dt><dd>Sydney, Australia — engagements nationwide</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="wrap folio" id="practice">
+    <aside><span class="mark">§1</span><span class="label">The practice</span></aside>
+    <div class="practice-grid">
+     <div>
+      <p class="statement">Most advice is either academically sound or commercially useful. <span>We are built to be both.</span></p>
+      <div class="cols2">
+        <p>Our team teaches and research at postgraduate level, and bring more than a decade of industry work in analytics, strategy consulting and market research. That combination shapes everything we deliver: evidence first, frameworks that hold up to scrutiny, and outputs people can actually use on Monday morning.</p>
+        <p>We work in two worlds. For education providers, we build and deliver curriculum that meets accreditation expectations and engages students. For organisations, we provide strategic and analytics advice grounded in current research rather than recycled templates.</p>
+      </div>
+     </div>
+     <figure class="portrait-fig">
+       <div class="portrait"><img src="ash-najmaei.jpg" alt="Portrait of Dr Ash Najmaei" width="400" height="400"></div>
+       <figcaption><b>Dr Ash Najmaei</b><span>Co-founder &amp; Director</span></figcaption>
+     </figure>
+    </div>
+  </section>
+
+  <section class="wrap folio" id="services">
+    <aside><span class="mark">§2</span><span class="label">Our domains</span></aside>
+    <div style="display:flex;flex-direction:column;gap:28px;min-width:0">
+      <p class="statement" style="font-size:clamp(1.6rem,3.4vw,2.3rem)">Four domains. <span>One standard of rigour.</span></p>
+      <div class="domains">
+        <article class="dom" id="d-strategy">
+          <div class="dom-head"><span class="code">SAC</span><span class="label">Domain I</span></div>
+          <h3>Strategic Advice &amp; Consultancy</h3>
+          <p>Independent, evidence-led counsel for executives, boards and institutional leaders. We frame the problem, test the evidence and give a clear, defensible recommendation.</p>
+          <ul>
+            <li>Competitive and corporate strategy reviews</li>
+            <li>Growth, market entry and business model design</li>
+            <li>Entrepreneurial venture and innovation advisory</li>
+            <li>Academic and institutional strategy for education providers</li>
+          </ul>
+          <p class="for"><b>For</b> executives, boards, founders, university and college leadership</p>
+        </article>
+        <article class="dom" id="d-training">
+          <div class="dom-head"><span class="code">TRC</span><span class="label">Domain II</span></div>
+          <h3>Training &amp; Coaching</h3>
+          <p>Teaching, workshops and one-to-one coaching that build lasting capability. Sessions are practical, research-informed and built around participants' own cases.</p>
+          <ul>
+            <li>Undergraduate, postgraduate and MBA teaching</li>
+            <li>Executive education and professional short courses</li>
+            <li>Academic development for educators and teaching teams</li>
+            <li>Leadership and strategy coaching</li>
+            <li>Research design and supervision for HDR, masters and honours candidates</li>
+            <li>Research methodology and analytics training, from survey design to advanced quantitative and qualitative methods</li>
+          </ul>
+          <p class="for"><b>For</b> institutions, professional educators, researchers, leadership teams and individuals</p>
+        </article>
+        <article class="dom" id="d-content">
+          <div class="dom-head"><span class="code">CDD</span><span class="label">Domain III</span></div>
+          <h3>Content Development &amp; Design</h3>
+          <p>End-to-end subject and course development for universities, colleges and private providers, aligned to AQF levels and TEQSA expectations and ready to deliver.</p>
+          <ul>
+            <li>Curriculum and learning outcome design</li>
+            <li>Weekly online modules and learning activities</li>
+            <li>Assessment briefs, rubrics and AI-resilient assessment</li>
+            <li>Tutorial guides, lecture decks and facilitator notes</li>
+          </ul>
+          <p class="for"><b>For</b> higher education providers and training organisations</p>
+        </article>
+        <article class="dom" id="d-analytics">
+          <div class="dom-head"><span class="code">AAS</span><span class="label">Domain IV</span></div>
+          <h3>Analytics &amp; Advanced Solutions</h3>
+          <p>From analytics strategy to working models. We help organisations decide what to measure, build the right analytics and AI capability, and govern it responsibly.</p>
+          <ul>
+            <li>Analytics and AI roadmaps and capability planning</li>
+            <li>Predictive modelling, machine learning and decision tools</li>
+            <li>Marketing, customer and market research analytics</li>
+            <li>Responsible AI governance and evaluation</li>
+          </ul>
+          <p class="for"><b>For</b> organisations, institutions and research teams</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap folio">
+    <aside><span class="mark">§3</span><span class="label">Who we work with</span></aside>
+    <div class="aud">
+      <div>
+        <span class="label">Education providers</span>
+        <h3>Universities, colleges &amp; private HEPs</h3>
+        <ul>
+          <li>New subjects and courses built to accreditation standards</li>
+          <li>Refreshes of existing units, including online conversion</li>
+          <li>Assessment redesign for the generative-AI era</li>
+          <li>Qualified academics for teaching and coordination</li>
+        </ul>
+      </div>
+      <div class="dark">
+        <span class="label">Organisations</span>
+        <h3>Firms, founders &amp; public bodies</h3>
+        <ul>
+          <li>Strategy work that needs an independent, evidence-led view</li>
+          <li>Analytics and AI capability planning</li>
+          <li>Training that lifts a team's decision-making</li>
+          <li>Research-grade market and customer insight</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap folio" id="method">
+    <aside><span class="mark">§4</span><span class="label">How an engagement runs</span></aside>
+    <div class="steps">
+      <div><h3>Diagnose</h3><p>A short scoping conversation, then a review of your context, data and constraints. We agree the question before we answer it.</p></div>
+      <div><h3>Design</h3><p>We set out the approach, the deliverables and the timeline in a written proposal with a fixed scope.</p></div>
+      <div><h3>Deliver</h3><p>Work is produced in reviewable stages, so you see drafts early and steer the direction.</p></div>
+      <div><h3>Embed</h3><p>Handover includes documentation and, where useful, a session that equips your people to carry the work forward.</p></div>
+    </div>
+  </section>
+
+  <section class="wrap folio">
+    <aside><span class="mark">§5</span><span class="label">A typical subject build</span></aside>
+    <div style="display:flex;flex-direction:column;gap:22px;min-width:0">
+      <p style="max-width:62ch;color:var(--ink-soft)">What an education provider receives when we develop a standard 12-week postgraduate subject. Scope adjusts to your template and delivery mode.</p>
+      <div class="spec">
+        <table>
+          <thead><tr><th>Component</th><th>Detail</th><th>Volume</th></tr></thead>
+          <tbody>
+            <tr><td>Subject outline</td><td>Learning outcomes mapped to AQF level and course outcomes</td><td class="n">1</td></tr>
+            <tr><td>Weekly modules</td><td>Online content with readings, activities and knowledge checks</td><td class="n">12</td></tr>
+            <tr><td>Assessment briefs</td><td>Task, weighting, submission requirements and marking rubric</td><td class="n">3</td></tr>
+            <tr><td>Tutorial guides</td><td>Facilitator notes, case discussions and in-class exercises</td><td class="n">12</td></tr>
+            <tr><td>Lecture decks</td><td>Branded to your template, with speaker notes</td><td class="n">12</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap folio">
+    <aside><span class="mark" style="color:var(--brass)">§6</span><span class="label">Contact</span></aside>
+    <div>
+      <h2>Tell us what you are working on.</h2>
+      <div class="grid">
+        <div class="info">
+          <p>We reply to every enquiry within two business days with either a time to talk or a clear note on whether we are the right fit.</p>
+          <div><p class="label">Email</p><p class="v">hello@z3a.com.au</p></div>
+          <div><p class="label">Mobile</p><p class="v">(+61) 414 87 27 87</p></div>
+          <div><p class="label">Location</p><p>Sydney, New South Wales</p></div>
+          <div><p class="label">Company</p><p>Z3A Consulting Group Pty Ltd</p><p class="v" style="margin-top:4px">ACN 703 232 562 · ABN 32 703 232 562</p></div>
+        </div>
+        <form id="enq" novalidate>
+          <label>Name<input id="f-name" name="name" required autocomplete="name"></label>
+          <label>Organisation<input id="f-org" name="org" autocomplete="organization"></label>
+          <label class="full">Email<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+          <label class="full">Area of interest
+            <select id="f-area" name="area">
+              <option>Strategic Advice &amp; Consultancy</option>
+              <option>Training &amp; Coaching</option>
+              <option>Content Development &amp; Design</option>
+              <option>Analytics &amp; Advanced Solutions</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label class="full">Brief description<textarea id="f-msg" name="msg" required placeholder="Context, timing and what a good outcome looks like"></textarea></label>
+          <div class="full"><button class="btn" type="submit">Prepare enquiry</button></div>
+          <div class="out" id="out" hidden>
+            <p id="out-note">Your enquiry is ready. Copy it and send it to hello@z3a.com.au.</p>
+            <pre id="out-text"></pre>
+            <div><button class="btn" type="button" id="copy">Copy enquiry</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Z3A Consulting Group Pty Ltd · ACN 703 232 562 · ABN 32 703 232 562 · Sydney, Australia</span>
+    <span>Strategy &amp; Consultancy · Training &amp; Coaching · Content &amp; Design · Analytics &amp; Advanced Solutions</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const f=document.getElementById('enq'), out=document.getElementById('out'), txt=document.getElementById('out-text'), note=document.getElementById('out-note');
+  f.addEventListener('submit',e=>{
+    e.preventDefault();
+    const v=id=>document.getElementById(id).value.trim();
+    const missing=[];
+    if(!v('f-name'))missing.push('name');
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('f-email')))missing.push('a valid email');
+    if(!v('f-msg'))missing.push('a brief description');
+    out.hidden=false;
+    if(missing.length){note.textContent='Please add '+missing.join(', ')+' and try again.';txt.textContent='';document.getElementById('copy').hidden=true;return;}
+    document.getElementById('copy').hidden=false;
+    note.textContent='Your enquiry is ready. Copy it and send it to hello@z3a.com.au.';
+    txt.textContent=`Subject: Enquiry — ${v('f-area')}\n\nName: ${v('f-name')}\nOrganisation: ${v('f-org')||'—'}\nEmail: ${v('f-email')}\n\n${v('f-msg')}`;
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    const b=this;
+    navigator.clipboard.writeText(txt.textContent).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy enquiry',1800)})
+      .catch(()=>{const r=document.createRange();r.selectNodeContents(txt);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected — press Ctrl/Cmd+C';});
+  });
+})();
+</script>
+</body>
+</html>
